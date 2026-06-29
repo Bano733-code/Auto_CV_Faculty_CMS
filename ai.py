@@ -2,7 +2,7 @@ from groq import Groq
 import json
 import re
 
-client = Groq(api_key="YOUR_GROQ_API_KEY")
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 def extract_structured_data(cv_text):
 
